@@ -35,7 +35,6 @@ static void I2C_GPIO_Config(void)
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;	       // 开漏输出
   GPIO_Init(TMP275_I2C_SDA_PORT, &GPIO_InitStructure);	
 	
-	
 }
 
 
@@ -139,8 +138,7 @@ uint32_t I2C_tmp275_ByteWrite(u8* pBuffer, u8 PointAddr)
   } 
   
   /* Send STOP condition */
-  I2C_GenerateSTOP(TMP275_I2Cx, ENABLE);
-  
+  I2C_GenerateSTOP(TMP275_I2Cx, ENABLE); 
   return 1;
 }
 

@@ -210,7 +210,7 @@ uint32_t I2C_TMP275_BufferRead(u8* pBuffer, u8 ReadAddr, u16 NumByteToRead)
   /* ÔÚIIC×ÜÏßÉÏÕÒµ½TMP275µÄµØÖ· */
   I2C_Send7bitAddress(TMP275_I2Cx, SLAVE_ADDRESS, I2C_Direction_Transmitter);
 
-  I2CTimeout = I2CT_FLAG_TIMEOUT;
+  I2CTimeout = 10*I2CT_FLAG_TIMEOUT;
   /* Test on EV6 and clear it */
   while(!I2C_CheckEvent(TMP275_I2Cx, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED))
   {
