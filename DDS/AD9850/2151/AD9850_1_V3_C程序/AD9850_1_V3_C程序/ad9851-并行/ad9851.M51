@@ -1,0 +1,255 @@
+BL51 BANKED LINKER/LOCATER V5.12                                                        12/19/2008  20:24:17  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V5.12, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE ad9851.obj TO ad9851
+
+
+MEMORY MODEL: SMALL WITH FLOATING POINT ARITHMETIC
+
+
+INPUT MODULES INCLUDED:
+  ad9851.obj (AD9851)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FPMUL)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FPDIV)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?CASTF)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FPGETOPN)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?LNEG)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?SLSHR)
+
+
+LINK MAP OF MODULE:  ad9851 (AD9851)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000DH     UNIT         ?DT?_AD9851_WR_SERIAL?AD9851
+            DATA    0015H     000DH     UNIT         _DATA_GROUP_
+            IDATA   0022H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0249H     UNIT         ?C?LIB_CODE
+            CODE    024CH     00F7H     UNIT         ?PR?_AD9851_WR_SERIAL?AD9851
+            CODE    0343H     00AAH     UNIT         ?PR?_AD9851_WR_PARREL?AD9851
+            CODE    03EDH     001DH     UNIT         ?PR?MAIN?AD9851
+            CODE    040AH     0017H     UNIT         ?PR?AD9851_RESET_SERIAL?AD9851
+            CODE    0421H     000CH     UNIT         ?C_C51STARTUP
+            CODE    042DH     000BH     UNIT         ?PR?AD9851_RESET?AD9851
+
+
+
+OVERLAY MAP OF MODULE:   ad9851 (AD9851)
+
+
+SEGMENT                                  DATA_GROUP 
+  +--> CALLED SEGMENT                  START    LENGTH
+------------------------------------------------------
+?C_C51STARTUP                          -----    -----
+  +--> ?PR?MAIN?AD9851
+
+?PR?MAIN?AD9851                        -----    -----
+  +--> ?PR?AD9851_RESET?AD9851
+  +--> ?PR?_AD9851_WR_PARREL?AD9851
+
+?PR?_AD9851_WR_PARREL?AD9851           0015H    000DH
+
+
+BL51 BANKED LINKER/LOCATER V5.12                                                      12/19/2008  20:24:17  PAGE 2
+
+
+
+SYMBOL TABLE OF MODULE:  ad9851 (AD9851)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        AD9851
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  C:040AH         PUBLIC        ad9851_reset_serial
+  B:00A0H.2       PUBLIC        ad9851_w_clk
+  B:00A0H.1       PUBLIC        ad9851_fq_up
+  C:042DH         PUBLIC        ad9851_reset
+  C:03EDH         PUBLIC        main
+  C:024CH         PUBLIC        _ad9851_wr_serial
+  C:0343H         PUBLIC        _ad9851_wr_parrel
+  B:0090H.7       PUBLIC        ad9851_bit_data
+  B:00A0H.0       PUBLIC        ad9851_rest
+  -------         PROC          AD9851_RESET
+  C:042DH         LINE#         55
+  C:042DH         LINE#         56
+  C:042DH         LINE#         57
+  C:042FH         LINE#         58
+  C:0431H         LINE#         60
+  C:0433H         LINE#         61
+  C:0435H         LINE#         62
+  C:0437H         LINE#         63
+  -------         ENDPROC       AD9851_RESET
+  -------         PROC          AD9851_RESET_SERIAL
+  C:040AH         LINE#         67
+  C:040AH         LINE#         68
+  C:040AH         LINE#         69
+  C:040CH         LINE#         70
+  C:040EH         LINE#         72
+  C:0410H         LINE#         73
+  C:0412H         LINE#         74
+  C:0414H         LINE#         76
+  C:0416H         LINE#         77
+  C:0418H         LINE#         78
+  C:041AH         LINE#         80
+  C:041CH         LINE#         81
+  C:041EH         LINE#         82
+  C:0420H         LINE#         83
+  -------         ENDPROC       AD9851_RESET_SERIAL
+  -------         PROC          _AD9851_WR_PARREL
+  D:0015H         SYMBOL        w0
+  D:0016H         SYMBOL        frequence
+  -------         DO            
+  D:0007H         SYMBOL        w
+  D:001AH         SYMBOL        y
+  D:001EH         SYMBOL        x
+  -------         ENDDO         
+  C:0343H         LINE#         87
+  C:0345H         LINE#         88
+BL51 BANKED LINKER/LOCATER V5.12                                                      12/19/2008  20:24:17  PAGE 3
+
+
+  C:0345H         LINE#         93
+  C:0351H         LINE#         95
+  C:036CH         LINE#         96
+  C:037FH         LINE#         97
+  C:038AH         LINE#         99
+  C:038CH         LINE#         100
+  C:038EH         LINE#         101
+  C:0390H         LINE#         102
+  C:0392H         LINE#         104
+  C:039FH         LINE#         105
+  C:03A1H         LINE#         106
+  C:03A3H         LINE#         107
+  C:03A5H         LINE#         109
+  C:03B2H         LINE#         110
+  C:03B4H         LINE#         111
+  C:03B6H         LINE#         112
+  C:03B8H         LINE#         114
+  C:03C5H         LINE#         115
+  C:03C7H         LINE#         116
+  C:03C9H         LINE#         117
+  C:03CBH         LINE#         119
+  C:03E2H         LINE#         120
+  C:03E4H         LINE#         121
+  C:03E6H         LINE#         122
+  C:03E8H         LINE#         124
+  C:03EAH         LINE#         125
+  C:03ECH         LINE#         126
+  -------         ENDPROC       _AD9851_WR_PARREL
+  -------         PROC          _AD9851_WR_SERIAL
+  D:0008H         SYMBOL        w0
+  D:0009H         SYMBOL        frequence
+  -------         DO            
+  D:0006H         SYMBOL        i
+  D:0007H         SYMBOL        w
+  D:000DH         SYMBOL        y
+  D:0011H         SYMBOL        x
+  -------         ENDDO         
+  C:024CH         LINE#         130
+  C:024EH         LINE#         131
+  C:024EH         LINE#         136
+  C:025AH         LINE#         138
+  C:0275H         LINE#         139
+  C:0288H         LINE#         140
+  C:0293H         LINE#         142
+  C:02A2H         LINE#         143
+  C:02A4H         LINE#         144
+  C:02A4H         LINE#         145
+  C:02B1H         LINE#         146
+  C:02B3H         LINE#         147
+  C:02B5H         LINE#         148
+  C:02B9H         LINE#         150
+  C:02C6H         LINE#         151
+  C:02C8H         LINE#         152
+  C:02C8H         LINE#         153
+  C:02D5H         LINE#         154
+  C:02D7H         LINE#         155
+  C:02D9H         LINE#         156
+BL51 BANKED LINKER/LOCATER V5.12                                                      12/19/2008  20:24:17  PAGE 4
+
+
+  C:02DDH         LINE#         158
+  C:02EAH         LINE#         159
+  C:02ECH         LINE#         160
+  C:02ECH         LINE#         161
+  C:02F9H         LINE#         162
+  C:02FBH         LINE#         163
+  C:02FDH         LINE#         164
+  C:0301H         LINE#         166
+  C:030EH         LINE#         167
+  C:0310H         LINE#         168
+  C:0310H         LINE#         169
+  C:031DH         LINE#         170
+  C:031FH         LINE#         171
+  C:0321H         LINE#         172
+  C:0325H         LINE#         174
+  C:0327H         LINE#         175
+  C:0329H         LINE#         176
+  C:0329H         LINE#         177
+  C:0336H         LINE#         178
+  C:0338H         LINE#         179
+  C:033AH         LINE#         180
+  C:033EH         LINE#         182
+  C:0340H         LINE#         183
+  C:0342H         LINE#         184
+  -------         ENDPROC       _AD9851_WR_SERIAL
+  -------         PROC          MAIN
+  C:03EDH         LINE#         188
+  C:03EDH         LINE#         189
+  C:03EDH         LINE#         190
+  C:03F0H         LINE#         191
+  C:03F2H         LINE#         192
+  C:03F4H         LINE#         193
+  C:03F6H         LINE#         196
+  C:03F9H         LINE#         197
+  C:0408H         LINE#         210
+  C:0408H         LINE#         211
+  C:0408H         LINE#         212
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        AD9851
+
+  -------         MODULE        ?C?FPMUL
+  C:0003H         PUBLIC        ?C?FPMUL
+  -------         ENDMOD        ?C?FPMUL
+
+  -------         MODULE        ?C?FPDIV
+  C:010CH         PUBLIC        ?C?FPDIV
+  -------         ENDMOD        ?C?FPDIV
+
+  -------         MODULE        ?C?CASTF
+  C:01A9H         PUBLIC        ?C?CASTF
+  -------         ENDMOD        ?C?CASTF
+
+  -------         MODULE        ?C?LNEG
+  C:022AH         PUBLIC        ?C?LNEG
+  -------         ENDMOD        ?C?LNEG
+
+  -------         MODULE        ?C?SLSHR
+BL51 BANKED LINKER/LOCATER V5.12                                                      12/19/2008  20:24:17  PAGE 5
+
+
+  C:0238H         PUBLIC        ?C?SLSHR
+  -------         ENDMOD        ?C?SLSHR
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD9851_RESET_SERIAL?AD9851
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD9851_WR_SERIAL?AD9851
+
+Program Size: data=35.0 xdata=0 code=1080
+LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)

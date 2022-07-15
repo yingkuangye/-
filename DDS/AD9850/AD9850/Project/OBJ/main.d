@@ -1,0 +1,13 @@
+.\obj\main.o: ..\User\main.c
+.\obj\main.o: ..\User\stm32f10x.h
+.\obj\main.o: ..\CORE\core_cm3.h
+.\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\main.o: ..\CORE\system_stm32f10x.h
+.\obj\main.o: ..\User\stm32f10x_conf.h
+.\obj\main.o: ..\FWLib\inc\stm32f10x_dbgmcu.h
+.\obj\main.o: ..\User\stm32f10x.h
+.\obj\main.o: ..\FWLib\inc\stm32f10x_gpio.h
+.\obj\main.o: ..\FWLib\inc\stm32f10x_rcc.h
+.\obj\main.o: ..\FWLib\inc\stm32f10x_usart.h
+.\obj\main.o: ..\FWLib\inc\misc.h
+.\obj\main.o: ..\Hardware\AD9850.h

@@ -1,0 +1,20 @@
+<html>
+<body>
+<pre>
+<h1>礦ision2 Build Log</h1>
+<h2>Project:</h2>
+E:\--整理--\【AD9851】\【AD9850&1-V3版】\AD9850_1_V3_C程序\ad9850-并行\ad9850.uv2
+Project File Date:  06/22/2009
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling ad9850.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD9850_RESET_SERIAL?AD9850
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD9850_WR_SERIAL?AD9850
+Program Size: data=35.0 xdata=0 code=1079
+creating hex file from "ad9850"...
+"ad9850" - 0 Error(s), 2 Warning(s).
